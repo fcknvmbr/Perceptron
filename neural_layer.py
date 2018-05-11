@@ -22,8 +22,8 @@ class NeuralLayer:
         self.layer_outputs = np.array([])
 
     def print_structure(self, i):
-        print "\n Layer {0} of {1} neurons structure:".format(i, self.number_of_neurons)
-        for j in xrange(self.number_of_neurons):
-            print "  Neuron {0} input weights:".format(j)
-            for k in xrange(len(self.synaptic_weights)):
-                print "   Weight {0} = {1}".format(k, self.synaptic_weights[k][j])
+        print(f"\n Layer {i} of {self.number_of_neurons} neurons structure:")
+        for j in range(self.number_of_neurons):
+            print(f"  Neuron {j} input weights:")
+            for k in range(len(self.synaptic_weights)):
+                print(f"   Weight {k} = {self.synaptic_weights[k][j]}")

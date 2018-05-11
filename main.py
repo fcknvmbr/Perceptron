@@ -31,10 +31,10 @@ if __name__ == "__main__":
 
     neural_network.train(INPUT, OUTPUT_AND, 10000)
 
-    print "{0} AND {1} -> {2}".format(a, c, neural_network.process(array([a, 1, c]))[0])
+    print(f'{a} AND {c} -> {neural_network.process(array([a, 1, c]))[0]}')
 
     neural_network.train(INPUT, OUTPUT_OR, 10000)
-    print "{0} OR  {1} -> {2}".format(a, c, neural_network.process(array([a, 1, c]))[0])
+    print(f'{a} OR  {c} -> {neural_network.process(array([a, 1, c]))[0]}')
 
     # neural_network.print_structure()
 
